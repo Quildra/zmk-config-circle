@@ -8,7 +8,7 @@
         a-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <15>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
@@ -22,9 +22,5 @@
         label = "default_kscan";
         wakeup-source;
         input-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-
-        &main_encoder {
-            status = "okay";
-        };
     };    
 };

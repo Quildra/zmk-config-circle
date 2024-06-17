@@ -1,0 +1,6 @@
+if SHIELD_CIRCLE
+
+config ZMK_KEYBOARD_NAME
+    default "QCircle"
+
+endif

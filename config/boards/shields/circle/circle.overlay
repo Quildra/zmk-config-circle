@@ -21,12 +21,11 @@
         compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
         wakeup-source;
-
-        &main_encoder {
-            status = "okay";
-        };
-
         input-gpios=
         <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+    };
+
+    &main_encoder {
+            status = "okay";
     };
 };

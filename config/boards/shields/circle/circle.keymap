@@ -1,7 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&main_encoder {
+    status = "okay";
+};
+
 / {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&main_encoder>;
+        triggers-per-rotation = <20>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
